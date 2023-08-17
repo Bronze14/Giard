@@ -1,13 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link href="output.css" rel="stylesheet" />
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="">
+    <div class="ml-60 mr-60 box-border">
+      <nav class="ml-2 mr-2 flex justify-between text-stone-950">
+        <img class="mt-6 mb-6" src="images/giarddesign.svg" alt="logo" />
+        <div class="flex gap-10 mt-6 mb-6">
+          <span class="flex">
+            <h3>Oferta</h3>
+            <img src="images/downstair.svg" alt="downstair" class="ml-2" />
+          </span>
+          <h3>O firmie</h3>
+          <h3>Realizacje</h3>
+          <h3>Kontakt</h3>
+          <img src="images/lupa.svg" alt="lupa" />
+        </div>
+      </nav>
+      <header>
+        <div class="flex">
+          <div class="bg-orange-200 flex-1">
+            <div class="mt-14 mb-14 ml-20 mr-20">
+              <h2 class="text-6xl pb-10">
+                Nowoczesna aranżacja Twojego ogrodu
+              </h2>
+              <h3 class="pb-10">
+                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+                realizacji. Oferujemy kompleksowy zakres usługz indywidualnym
+                podejściem do każdego projektu.
+              </h3>
+              <div class="flex space-x-9">
+                <div
+                  class="text-center text-stone-100 text-base font-normal leading-normal"
+                >
+                  Skontaktuj się z nami
+                </div>
+                <div
+                  class="text-center text-green-900 text-base font-normal leading-normal"
+                >
+                  Zobacz nasze realizacje
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+      </header>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
