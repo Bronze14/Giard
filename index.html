@@ -8,7 +8,6 @@
     <link href="output.css" rel="stylesheet" />
   </head>
   <body class="">
-    <div class="box-border">
       <nav class="border-gray-200 py-6">
         <div
           class="container mx-auto flex flex-wrap items-center justify-between"
@@ -149,14 +148,10 @@
           </div>
         </div>
       </nav>
-      <header>
-        <!-- Display Container (not part of component) START -->
-        <div class="">
-          <!-- Carousel Body -->
-          <div
-            class="relative rounded-lg block md:flex items-center bg-orange-200 shadow-xl"
-          >
-            <div class="bg-orange-200 w-full h-auto">
+  <Header>
+    <div class="carousel w-full relative ">
+      <div id="slide1" class="carousel-item active">
+         <div class="bg-orange-200 w-full h-auto block lg:flex">
               <div class="flex flex-col gap-20 px-20 py-24 my-auto">
                 <h2
                   class="self-stretch text-neutral-900 font-medium md:text-6xl text-4xl leading-10"
@@ -184,81 +179,96 @@
                     Zobacz nasze realizacje ↓
                   </button>
                 </div>
-              </div>
-            </div>
-            <div class="relative w-full h-[750px]">
+              </div> 
+              <div class="w-full h-[600px]">
               <img
-                class="absolute w-full h-full object-cover object-center"
+                class="w-full h-full object-cover object-center"
                 src="/images/photo1.jpg"
                 alt="gardenphoto"
               />
             </div>
-
-            <div class="absolute right-0 bottom-0 flex">
-              <button
-                class="right-0 bottom-0 shadow-md px-6 py-6 text-2xl transform active:scale-90 transition-all duration-100 bg-white"
+            </div>
+        <div class="absolute right-0 bottom-0 flex ">
+          <a href="#slide4" class="btn btn-circle">
+          <button
+                class="right-0 bottom-0 button-prev shadow-md px-6 py-6 text-2xl transform active:scale-90 transition-all duration-100 bg-white"
               >
                 <span class="block">
                   <img src="images/Arrowleft.svg" alt="Arrowleft" />
                 </span>
               </button>
-              <button
-                class="right-0 bottom-0 shadow-md px-6 py-6 text-2xl transform active:scale-90 transition-all duration-100 bg-white"
+          </a>
+          <a href="#slide2" class="btn btn-circle">              
+            <button
+                class="right-0 bottom-0 button-next shadow-md px-6 py-6 text-2xl transform active:scale-90 transition-all duration-100 bg-white"
               >
                 <span class="block">
                   <img src="images/Arrowright.svg" alt="Arrowright" />
                 </span>
               </button>
-            </div>
-          </div>
-
-          <!-- Carousel Tabs -->
-          <div class="flex items-center pt-5 justify-between">
-            <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
-              <img
-                class="w-full"
-                src="https://stripe.com/img/v3/payments/overview/logos/kickstarter.svg"
-                alt=""
-                style="max-height: 60px"
-              />
-            </button>
-            <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
-              <img
-                class="w-full"
-                src="https://stripe.com/img/v3/payments/overview/logos/slack.svg"
-                alt=""
-                style="max-height: 60px"
-              />
-            </button>
-            <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
-              <img
-                class="w-full"
-                src="https://stripe.com/img/v3/payments/overview/logos/glossier.svg"
-                alt=""
-                style="max-height: 60px"
-              />
-            </button>
-            <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
-              <img
-                class="w-full"
-                src="https://stripe.com/img/v3/payments/overview/logos/charity_water.svg"
-                alt=""
-                style="max-height: 60px"
-              />
-            </button>
-            <button
-              class="px-2 opacity-100 hover:opacity-100 focus:opacity-100"
-            >
-              <img
-                class="w-full"
-                src="https://stripe.com/img/v3/payments/overview/logos/missguided.svg"
-                alt=""
-                style="max-height: 60px"
-              />
-            </button>
-          </div>
+            </a>
         </div>
-      </header>
+      </div>
+      <div id="slide2" class="carousel-item ">
+        <div class="bg-orange-200 w-full h-auto block lg:flex ">
+              <div class="flex flex-col gap-20 px-20 py-24 my-auto">
+                <h2
+                  class="self-stretch text-neutral-900 font-medium md:text-6xl text-4xl leading-10"
+                >
+                  Design rzeczy wszelakich
+                </h2>
+                <h3
+                  class="text-neutral-900 text-base font-normal leading-normal"
+                >
+
+                Nasza firma jest w pełni oddana sztuce designu, skupiając się na dwóch kluczowych aspektach: estetyce i funkcjonalności.
+                </h3>
+                <div
+                  class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-9"
+                >
+                  <button
+                    class="px-6 py-3 bg-green-900 rounded-[200px] text-stone-100 text-base font-normal leading-normal"
+                  >
+                    Skontaktuj się z nami
+                  </button>
+                  <button
+                    class="px-[22px] py-3 rounded-[200px] border border-green-900 text-green-900 text-base font-normal leading-normal"
+                  >
+                    Zobacz nasze realizacje ↓
+                  </button>
+                </div>
+              </div>
+              <div class="relative w-full h-[600px]">
+              <img
+                class=" w-full h-full object-cover object-center"
+                src="/images/house.png"
+                alt="gardenphoto"
+              />  
+            </div>
+            </div>
+        <div class="absolute right-0 bottom-0 flex">
+          <a href="#slide1" class="btn btn-circle">
+          <button
+                class="right-0 bottom-0 button-prev shadow-md px-6 py-6 text-2xl transform active:scale-90 transition-all duration-100 bg-white"
+              >
+                <span class="block">
+                  <img src="images/Arrowleft.svg" alt="Arrowleft" />
+                </span>
+              </button>
+          </a>
+          <a href="#slide3" class="btn btn-circle">              
+            <button
+                class="right-0 bottom-0 button-next shadow-md px-6 py-6 text-2xl transform active:scale-90 transition-all duration-100 bg-white"
+              >
+                <span class="block">
+                  <img src="images/Arrowright.svg" alt="Arrowright" />
+                </span>
+              </button>
+            </a>
+        </div>
+      </div>
+      </div>
+  </Header>
       <section class="bg-stone-100 py-24">
         <div
           class="flex-col justify-center gap-24 inline-flex md:w-auto sm:py-8"
@@ -655,5 +665,52 @@
     <script type="module" src="/nav.js"></script>
     <script type="module" src="/masonary.js"></script>
     <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+<script>
+  // Pobieramy wszystkie elementy obrazków i przycisków
+  const slides = document.querySelectorAll('.carousel-item');
+  const prevButtons = document.querySelectorAll('#slide1 .btn-circle[href="#slide4"], #slide2 .btn-circle[href="#slide1"], #slide3 .btn-circle[href="#slide2"], #slide4 .btn-circle[href="#slide3"]');
+  const nextButtons = document.querySelectorAll('#slide1 .btn-circle[href="#slide2"], #slide2 .btn-circle[href="#slide3"], #slide3 .btn-circle[href="#slide4"], #slide4 .btn-circle[href="#slide1"]');
+  
+  let currentSlide = 0;
+  
+  // Funkcja do ukrywania wszystkich obrazków
+  function hideAllSlides() {
+    slides.forEach(slide => {
+      slide.style.display = 'none';
+    });
+  }
+  
+  // Funkcja do pokazywania bieżącego obrazka
+  function showSlide(slideIndex) {
+    hideAllSlides();
+    slides[slideIndex].style.display = 'block';
+    currentSlide = slideIndex;
+  }
+  
+  // Funkcja do obsługi kliknięcia w przycisk poprzedni
+  function prevSlide() {
+    const prevSlideIndex = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(prevSlideIndex);
+  }
+  
+  // Funkcja do obsługi kliknięcia w przycisk następny
+  function nextSlide() {
+    const nextSlideIndex = (currentSlide + 1) % slides.length;
+    showSlide(nextSlideIndex);
+  }
+  
+  // Dodajemy obsługę kliknięć w przyciski
+  prevButtons.forEach(button => {
+    button.addEventListener('click', prevSlide);
+  });
+  
+  nextButtons.forEach(button => {
+    button.addEventListener('click', nextSlide);
+  });
+  
+  // Pokazujemy pierwszy slajd na starcie
+  showSlide(0);
+</script>
+
   </body>
 </html>
