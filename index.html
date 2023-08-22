@@ -150,43 +150,112 @@
         </div>
       </nav>
       <header>
-        <div class="flex flex-col w-full sm:flex-row">
-          <div class="bg-orange-200 w-full grid md:w-2/3 lg:w-1/2">
-            <div class="flex flex-col gap-20 px-20 py-24 my-auto">
-              <h2
-                class="self-stretch text-neutral-900 font-medium md:text-6xl text-4xl leading-10"
-              >
-                Nowoczesna aranżacja Twojego ogrodu
-              </h2>
-              <h3 class="text-neutral-900 text-base font-normal leading-normal">
-                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-                realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
-                podejściem do każdego projektu.
-              </h3>
-              <div
-                class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-9"
-              >
-                <button
-                  class="px-6 py-3 bg-green-900 rounded-[200px] text-stone-100 text-base font-normal leading-normal"
+        <!-- Display Container (not part of component) START -->
+        <div class="">
+          <!-- Carousel Body -->
+          <div
+            class="relative rounded-lg block md:flex items-center bg-orange-200 shadow-xl"
+          >
+            <div class="bg-orange-200 w-full h-auto">
+              <div class="flex flex-col gap-20 px-20 py-24 my-auto">
+                <h2
+                  class="self-stretch text-neutral-900 font-medium md:text-6xl text-4xl leading-10"
                 >
-                  Skontaktuj się z nami
-                </button>
-                <button
-                  class="px-[22px] py-3 rounded-[200px] border border-green-900 text-green-900 text-base font-normal leading-normal"
+                  Nowoczesna aranżacja Twojego ogrodu
+                </h2>
+                <h3
+                  class="text-neutral-900 text-base font-normal leading-normal"
                 >
-                  Zobacz nasze realizacje ↓
-                </button>
+                  Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                  estetyka realizacji. Oferujemy kompleksowy zakres usług z
+                  indywidualnym podejściem do każdego projektu.
+                </h3>
+                <div
+                  class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-9"
+                >
+                  <button
+                    class="px-6 py-3 bg-green-900 rounded-[200px] text-stone-100 text-base font-normal leading-normal"
+                  >
+                    Skontaktuj się z nami
+                  </button>
+                  <button
+                    class="px-[22px] py-3 rounded-[200px] border border-green-900 text-green-900 text-base font-normal leading-normal"
+                  >
+                    Zobacz nasze realizacje ↓
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="relative w-full grid md:w-1/3 lg:w-1/2">
-            <div class="w-full md:h-[auto] max-h-[900px]">
+            <div class="relative w-full h-[750px]">
               <img
-                class="-rotate-180 object-top object-cover h-full max-w-full w-full"
-                src="images/photo1.jpg"
-                alt="siatkaobraz"
+                class="absolute w-full h-full object-cover object-center"
+                src="/images/photo1.jpg"
+                alt="gardenphoto"
               />
             </div>
+
+            <div class="absolute right-0 bottom-0 flex">
+              <button
+                class="right-0 bottom-0 shadow-md px-6 py-6 text-2xl transform active:scale-90 transition-all duration-100 bg-white"
+              >
+                <span class="block">
+                  <img src="images/Arrowleft.svg" alt="Arrowleft" />
+                </span>
+              </button>
+              <button
+                class="right-0 bottom-0 shadow-md px-6 py-6 text-2xl transform active:scale-90 transition-all duration-100 bg-white"
+              >
+                <span class="block">
+                  <img src="images/Arrowright.svg" alt="Arrowright" />
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carousel Tabs -->
+          <div class="flex items-center pt-5 justify-between">
+            <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
+              <img
+                class="w-full"
+                src="https://stripe.com/img/v3/payments/overview/logos/kickstarter.svg"
+                alt=""
+                style="max-height: 60px"
+              />
+            </button>
+            <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
+              <img
+                class="w-full"
+                src="https://stripe.com/img/v3/payments/overview/logos/slack.svg"
+                alt=""
+                style="max-height: 60px"
+              />
+            </button>
+            <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
+              <img
+                class="w-full"
+                src="https://stripe.com/img/v3/payments/overview/logos/glossier.svg"
+                alt=""
+                style="max-height: 60px"
+              />
+            </button>
+            <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
+              <img
+                class="w-full"
+                src="https://stripe.com/img/v3/payments/overview/logos/charity_water.svg"
+                alt=""
+                style="max-height: 60px"
+              />
+            </button>
+            <button
+              class="px-2 opacity-100 hover:opacity-100 focus:opacity-100"
+            >
+              <img
+                class="w-full"
+                src="https://stripe.com/img/v3/payments/overview/logos/missguided.svg"
+                alt=""
+                style="max-height: 60px"
+              />
+            </button>
           </div>
         </div>
       </header>
@@ -294,8 +363,8 @@
             <h1 class="text-5xl">Nasze projekty</h1>
           </div>
         </div>
-        <div class="relative">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 relative">
             <div class="grid gap-4">
               <div>
                 <img
@@ -387,6 +456,18 @@
                   alt=""
                 />
               </div>
+            </div>
+            <div
+              class="absolute w-full h-full bg-gradient-to-b from-transparent to-orange-200 opacity-90 z-10 top-0 left-0"
+              id="overlay"
+            ></div>
+            <div class="z-10 absolute flex w-full h-full">
+              <button
+                id="expandButton"
+                class="px-6 py-3 my-auto mx-auto rounded-[200px] border border-neutral-900 gap-2 inline-flex text-center text-neutral-900 text-base font-normal leading-normal mb-10"
+              >
+                Rozwiń
+              </button>
             </div>
           </div>
           <div
@@ -486,21 +567,6 @@
               </div>
             </div>
           </div>
-          <div
-            class="absolute w-full h-full bg-gradient-to-b from-transparent to-orange-200 opacity-90 z-10 top-0 left-0"
-            id="overlay"
-          >
-            <div
-              class="z-10 relative flex justify-center items-start mt-[50vh]"
-            >
-              <button
-                id="expandButton"
-                class="px-6 py-3 rounded-[200px] border border-neutral-900 gap-2 inline-flex text-center text-neutral-900 text-base font-normal leading-normal mb-10"
-              >
-                Rozwiń
-              </button>
-            </div>
-          </div>
         </div>
       </section>
       <section>
@@ -534,15 +600,25 @@
       </section>
 
       <footer>
-        <div class="px-10 lg:px-60 py-20 bg-black text-white">
-          <div class="flex justify-between pb-4 md:pb-16">
-            <img src="images/giarddesign.svg" class="" />
+        <div class="px-10 lg:px-60 py-16 lg:py-20 bg-black text-white">
+          <div
+            class="flex justify-between gap-3 md:gap-0 pb-4 md:pb-16 flex-col md:flex-row"
+          >
+            <span
+              class="text-lg font-semibold whitespace-nowrap flex items-center"
+            >
+              <img
+                class="mx-auto"
+                src="images/giarddesignfooter.svg"
+                alt="logo"
+              />
+            </span>
             <div
-              class="flex lg:gap-6 text-center items-center justify-center text-stone-100 text-xs md:text-base font-normal leading-normal"
+              class="flex gap-3 lg:gap-6 text-center items-center justify-center text-stone-100 text-xs md:text-base font-normal leading-normal flex-col md:flex-row"
             >
               <h4 class="">Daj znać, co możemy dla ciebie zrobić!</h4>
               <button
-                class="px-6 pt-3 pb-3.5 bg-green-900 rounded-[200px] gap-2.5 inline-flex"
+                class="px-3 py-1.5 md:px-6 md:py-3.5 bg-green-900 rounded-[200px] gap-2.5 inline-flex"
               >
                 Skontaktuj się z nami
               </button>
@@ -550,22 +626,24 @@
           </div>
           <hr class="bg-white" />
           <div
-            class="flex justify-between pt-16 text-stone-100 text-center text-sm font-normal"
+            class="flex flex-col md:flex-row md:justify-between pt-4 md:pt-16 text-stone-100 text-center text-sm md:text-base font-light md:font-normal gap-3"
           >
-            <div class="flex gap-2">
-              <div>Kontakt</div>
-              <div>Instagram</div>
-              <div>Facebook</div>
-              <div>LinkedIn</div>
+            <div class="flex flex-col gap-3 md:flex-row md:gap-2">
+              <div><a href="#">Kontakt</a></div>
+              <div><a href="#">Instagram</a></div>
+              <div><a href="#">Facebook</a></div>
+              <div><a href="#">LinkedIn</a></div>
             </div>
-            <div class="flex gap-12">
+            <div class="flex flex-col gap-3 md:flex-row md:gap-12">
               <h3>000-000-000</h3>
               <h3>giarddesign@kontakt.pl</h3>
             </div>
           </div>
-          <div class="flex justify-between pt-32">
-            <div>Prawa zastrzeżone © 2022</div>
-            <div class="flex gap-4">
+          <div
+            class="flex justify-center md:justify-between pt-12 md:pt-32 flex-col md:flex-row gap-6"
+          >
+            <div class="mx-auto md:mx-0">Prawa zastrzeżone © 2022</div>
+            <div class="flex gap-4 mx-auto md:mx-0">
               <h2>made by</h2>
               <img src="images/logo-full-light.png" alt="logoadrespect" />
             </div>

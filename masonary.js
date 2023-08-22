@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   expandButton.addEventListener('click', function () {
     if (!isSecondGridVisible) {
       secondGridContainer.style.display = 'grid'
-      expandButton.textContent = 'Zwiń'
+      expandButton.style.display = 'none'
       isSecondGridVisible = true
     } else {
       hiddenImages[shownImageIndex].style.display = 'block'
